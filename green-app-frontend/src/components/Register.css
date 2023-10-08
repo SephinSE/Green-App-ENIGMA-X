@@ -1,0 +1,58 @@
+.register-login-container {
+    margin: 0;
+    padding: 0;
+    width: 540px;
+    height: 540px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: linear-gradient(123deg, rgba(0, 0, 0, 0.35) 4.34%, rgba(0, 0, 0, 0.34) 100.86%);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.register-text {
+    color: #BCFFC3;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.register-label {
+    width: 300px;
+    height: 45px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.75);
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+}
+
+.register-button {
+    border: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(101, 203, 99, 0.79);
+
+    color: #014400;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+    transition: 0.2s ease;
+}
+
+.register-button:hover {
+    cursor: pointer;
+    background: #012a00;
+    color: rgba(121, 255, 117, 0.868);
+    transition: 0.2s ease;
+    transform: scale(1.02);
+}

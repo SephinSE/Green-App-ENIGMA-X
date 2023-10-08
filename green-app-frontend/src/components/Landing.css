@@ -1,0 +1,214 @@
+* {
+  font-family: 'Inter', sans-serif;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+html, body {
+    overflow: hidden;;
+    font-family: Inter;
+}
+
+.landing-container {
+    width: 100%;
+    height: 100vh;
+    background: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-login-container {
+    margin: 0;
+    padding: 0;
+    width: 540px;
+    height: 440px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: linear-gradient(123deg, rgba(0, 0, 0, 0.35) 4.34%, rgba(0, 0, 0, 0.34) 100.86%);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-text {
+    color: #BCFFC3;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.login-label {
+    width: 300px;
+    height: 45px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.75);
+    margin-bottom: 35px;
+    padding-bottom: 5px;
+}
+
+.login-input {
+    border: none;
+    background: none;
+    width: 300px;
+    height: 40px;
+    
+    font-family: Inter;
+    font-size:18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 3px;
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+.login-input::placeholder {
+    color: #326731;
+}
+
+.login-input:focus {
+    outline: none;
+}
+
+.login-label-text {
+    color: #326731;
+    font-family: Inter;
+    font-size:18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+
+    position: relative;
+    top: -29px;
+    left: 10px;
+    cursor: text;
+    transition: all .15s ease-in-out 0s;
+}
+
+.login-input:focus ~ .login-label-text,
+.login-input:valid ~ .login-label-text {
+	top: -4.3em;
+	left: 0;
+	font-size: 0.95em;
+    font-weight: 300;
+	color: #BCFFC3;
+}
+
+.login-button {
+    border: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(101, 203, 99, 0.79);
+
+    color: #014400;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 40px;
+    transition: 0.2s ease;
+}
+
+.login-button:hover {
+    cursor: pointer;
+    background: #012a00;
+    color: rgba(121, 255, 117, 0.868);
+    transition: 0.2s ease;
+    transform: scale(1.02);
+}
+
+.login-create-account {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.login-register-link {
+    color: #BCFFC3;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.login-register-link:hover {
+    color: #00ff1a;
+    transition: 0.2s ease;
+}
+
+.login-create-account:hover .login-register-link {
+    color: #00ff1a;
+    transition: 0.2s ease;
+}
+
+.landing-container {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .landing-container .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slide 10s infinite;
+  }
+  
+  .landing-container .slide:nth-child(1) {
+    background-image: url('../assets/background.jpg');
+    animation-delay: -0;
+  }
+  
+  .landing-container .slide:nth-child(2) {
+    background-image: url('../assets/background2.jpg');
+    animation-delay: -2s;
+  }
+    
+  .landing-container .slide:nth-child(3) {
+    background-image: url('../assets/background3.jpg');
+    animation-delay: -4s;
+  }
+    
+  .landing-container .slide:nth-child(4) {
+    background-image: url('../assets/background4.jpg');
+    animation-delay: -6s;
+  }
+  
+  .landing-container .slide:nth-child(5) {
+    background-image: url('../assets/background5.jpg');
+    animation-delay: -8s;
+  }
+  
+  @keyframes slide {
+    0%, 15%, 100% {
+      transform: translateX(0);
+      animation-timing-function: ease;
+    }
+    20% {
+      transform: translateX(-100%);
+      animation-timing-function: step-end;
+    }
+    95% {
+      transform: translateX(100%);
+      animation-timing-function: ease;
+    }
+  }
